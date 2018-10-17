@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TargetHit : MonoBehaviour {
 
+    public GameObject score;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -16,9 +18,13 @@ public class TargetHit : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Bullet")
+        if (other.gameObject.tag == "Bullet")
         {
+            Debug.Log("Hit");
             this.gameObject.SetActive(false);
+
+            score.GetComponent<ScoreKeeper>().updateScore();
+
         }
     }
 }
