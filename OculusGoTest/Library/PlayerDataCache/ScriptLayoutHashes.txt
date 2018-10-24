@@ -146,7 +146,7 @@ e763036081c708b34f78f5a56f72c23d TextMeshPro-2017.3-Runtime.dll:TMPro.TMP_StyleS
 22bb40270d2bfc0d0884e2aefd3d1c60 TextMeshPro-2017.3-Runtime.dll:TMPro.TMP_Text
 322cb40e1e282f28af980cbef7922a90 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
-0802da72acd359d8784e1234f0feed1b Assembly-CSharp.dll:.TargetHit
+bac1abbe98b2bb01de3146ef28658bc4 Assembly-CSharp.dll:.TargetHit
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
@@ -260,6 +260,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.VertexColorCycler
 020550babdb991365f61c5bffe1f4f52 Assembly-CSharp.dll:TMPro.Examples.TextMeshSpawner
 a69b3ee0402770d02d1c122324e4b00e Assembly-CSharp.dll:TMPro.Examples.SkewTextExample
+fb3b007040d43f084898791bbe8e145d Assembly-CSharp.dll:.VRRaycaster
 34e025057ef78b1bf238460cdf6583a3 Assembly-CSharp.dll:TMPro.Examples.ObjectSpin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.SimpleScript
-9d953efe5143b73901244f79b09987ea Assembly-CSharp.dll:.VRRaycaster
+ecc22394a6687fe06790e15d62dd1b8f Assembly-CSharp.dll:.PingPong

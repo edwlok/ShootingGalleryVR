@@ -5,6 +5,7 @@ using UnityEngine;
 public class TargetHit : MonoBehaviour {
 
     public GameObject score;
+    public bool gameOver = false;
 
 	// Use this for initialization
 	void Start () {
@@ -13,18 +14,43 @@ public class TargetHit : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+
+    }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Bullet")
+        if (!gameOver)
         {
-            Debug.Log("Hit");
-            this.gameObject.SetActive(false);
+            if (other.gameObject.tag == "Bullet")
+            {
+                Debug.Log("Hit");
+                //this.gameObject.SetActive(false);
 
-            score.GetComponent<ScoreKeeper>().updateScore();
+                this.gameObject.GetComponent<BoxCollider>().enabled = false;
 
+                for (int i = 0; i < 5; i++)
+                {
+                    this.gameObject.transform.GetChild(i).gameObject.SetActive(false);
+                }
+
+                score.GetComponent<ScoreKeeper>().updateScore();
+
+                StartCoroutine(yieldThreeSec());
+
+            }
         }
+    }
+
+    IEnumerator yieldThreeSec()
+    {
+        yield return new WaitForSeconds(7);
+
+        for (int i = 0; i < 5; i++)
+        {
+            this.gameObject.transform.GetChild(i).gameObject.SetActive(true);
+        }
+
+        this.gameObject.GetComponent<BoxCollider>().enabled = true;
+
     }
 }
