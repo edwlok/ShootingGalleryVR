@@ -23,7 +23,7 @@ public class TargetHit : MonoBehaviour {
         {
             if (other.gameObject.tag == "Bullet")
             {
-                Debug.Log("Hit");
+                                
                 //this.gameObject.SetActive(false);
 
                 this.gameObject.GetComponent<BoxCollider>().enabled = false;

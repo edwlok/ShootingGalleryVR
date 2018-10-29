@@ -113,7 +113,7 @@ public class VRRaycaster : MonoBehaviour
                 if (OVRInput.GetUp(OVRInput.Button.PrimaryIndexTrigger))
                 {
                     //player.transform.Translate(Vector3.forward);
-                    Vector3 newPosition = new Vector3(0f, 0.15f, 3.42f);
+                    Vector3 newPosition = new Vector3(0f, 1.65f, 2.0f);
 
                     player.transform.position = newPosition;
 
